@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dania Djatniko | Portofolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--header / navbar-->
+    <header class="header">
+        <div class="logo-icon"></div>
+
+        <nav class="nav">
+            <a href="#hero">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#message-us">Contact</a>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <main class="main">
+        <!-- Hero Section -->
+         <section class="hero-section" id="hero">
+            <div class="banner-container"></div>
+            <header>
+                <h2>Hi <span id="name"></span>, Welcome To My Website!</h2>
+            </header>
+            <script src="./js/script.js"></script>
+
+            <article>
+                <p>This is a simple website showcasing my journey as I learn HTML, CSS, and JavaScript!</p>
+                <a href="#profile">
+                    <button type="button" class="get-started">Let's Get Started!</button>
+                </a>
+            </article>
+         </section>
+
+         <hr class="divider-1">
+
+        <!-- Our Profile Section -->
+         <sectio class="profile" id="profile">
+            <header>
+                <h2>Profile</h2>
+            </header>
+            <article class="profile-container">
+                <div class="profile-1">
+                    <div class="profile-image-1"></div>
+                    <p>Dania started her journey with a degree in International Business</p>
+                </div>
+                <div class="profile-2">
+                    <div class="profile-image-2"></div>
+                    <p>Her passion for technology led her to become a Tech Educator</p>
+                </div>
+                <div class="profile-3">
+                    <div class="profile-image-3"></div>
+                    <p>In pursuit of further challenges and growth, she switched into the role of a Software Engineer.</p>
+                </div>
+            </article>
+         </section>
+
+        <!-- Portofolio Section -->
+         <section class="portofolio" id="portofolio">
+            <article class="portofolio-container">
+                <div class="portofolio-1"></div>
+                <ul class="portofolio-list">
+                    <h2>My Portofolio</h2>
+                    <br />
+                    <li>
+                        <p>Project 1 - A Pie Lovers Cookbook</p>
+                        <a href="https://github.com/daniadjt/a-pie-lovers-cookbook.git">Go To The Project</a>
+                    </li>
+                    <li>
+                        <p>Project 2 - Horizon Hoppers</p>
+                        <a href="https://github.com/daniadjt/horizon-hoppers.git">Go To The Project</a>
+                    </li>
+                    <li>
+                        <p>Project 3 - Deliver IT</p>
+                        <a href="https://github.com/daniadjt/final-task-pbi-rakamin-fullstack-dania-djatniko.git">Go To The Project</a>
+                    </li>
+                </ul>
+                </div>
+            </article>
+         </section>
+
+        <!-- Message Us Section -->
+
+        <section id="message-us" class="message-us">
+            <header class="header">
+                <h2>Drop Me a Line!</h2>
+            </header>
+            <article class="message-us-container">
+                <form id="message-form">
+                    <table class="form-table">
+                        <tr>
+                            <td><label for="n">Name : </label></td>
+                            <td><input id="form-name" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob">Date Of Birth : </label></td>
+                            <td><input id="form-date-of-birth" type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="g">Gender: </label></td>
+                            <td class="radio-group">
+                                <input id="form-gender-male" type="radio" name="gender" value="male">
+                                <label for="form-gender-male">Male</label>
+                                <input id="form-gender-female" type="radio" name="gender" value="female">
+                                <label for="form-gender-female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="m">Message : </label></td>
+                            <td><textarea rows="8" cols="64" id="form-message">Type here</textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <button class="submit-button" type="button" onclick="validateForm()">Submit</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="form-output">
+                    <label for="current-time">Current Time : </label>
+                    <span id="current-time"></span>
+                    <br/>
+                    <label for="name-output">Name : </label>
+                    <span id="name-output"></span>
+                    <br/>
+                    <label for="date-of-birth-output">Date Of Birth : </label>
+                    <span id="date-of-birth-output"></span>
+                    <br/>
+                    <label for="gender-output">Gender : </label>
+                    <span id="gender-output"></span>
+                    <br/>
+                    <label for="message-output">Message : </label>
+                    <span id="message-output"></span>
+                    <br/>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo"></div>
+            <div class="footer-social">
+                <h4>Follow My Social Media</h4>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://instagram.com" target="_blank">Facebook</a>
+            </div>
+            <div class="footer-nav">
+                <h4>Quick Links</h4>
+                <a href="#hero">Home</a>
+                <a href="#profile">Profile</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#message-us">Contact</a>
+        </div>
+        <br/>
+        <div class="footer-bottom"></div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Dania Djatniko. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

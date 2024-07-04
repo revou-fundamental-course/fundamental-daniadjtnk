@@ -1,0 +1,415 @@
+/* Header Style */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .logo-icon {
+        width: 80px;
+        height: 60px;
+        align-items: center;
+    }
+    nav {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav > a {
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon{
+    height: 50px;
+    width: 80px;
+    background-image: url('../assets/logo.png');
+    background-size: cover;
+}
+
+nav>a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-color: transparent;
+    color: black;
+    text-decoration: none;
+}
+
+/* Main Style */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .banner-container {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+        align-items: center;
+        background-size: contain;
+        background-position: center;
+    }
+}
+
+.banner-container{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    width: 800px;
+    height: 500px;
+    background-image: url('../assets/sammy-line-young-woman-coding-on-laptop.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin: 0 auto;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6%;
+    height: auto;
+}
+
+.get-started{
+    background-color: #00676c;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+.divider-1{
+    width: 50%; 
+    margin: 20px auto; 
+    height: 1px; 
+    border: none;
+    background-color: black;
+}
+
+/* Profile Section */
+.profile-image-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/sammy-line-17.png');
+    background-size: cover;
+    background-color: #fcfcff;
+    border-radius: 50%;
+    border: solid white;
+    height: 110px;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.profile-image-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/sammy-line-woman-learns-a-new-language-online.png');
+    background-size: cover;
+    background-color: #fcfcff;
+    border-radius: 50%;
+    border: solid white;
+    height: 110px;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.profile-image-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/sammy-line-file-sharing-between-phone-and-laptop-via-cloud.png');
+    background-color: #fcfcff;
+    background-size: cover;
+    border-radius: 50%;
+    border: solid white;
+    height: 110px;
+    width: 120px;
+    margin: 0 auto;
+}
+
+
+.profile{
+    padding: 5%;
+    text-align: center;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    font-weight: 200;
+}
+
+.profile-1{
+    border-radius: 5%;
+    background-color: #f6f6fd;
+    padding: 40px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-2{
+    border-radius: 5%;
+    background-color: #f6f6fd;
+    padding: 40px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-3{
+    border-radius: 5%;
+    background-color: #f6f6fd;
+    padding: 40px;
+    margin: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+    .profile-1, .profile-2, .profile-3 {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+/* Portofolio Section */
+.portofolio{
+    margin-top: 5%;
+}
+
+.portofolio-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    font-weight: 200;
+    background-color: #f6f6fd;
+}
+
+.portofolio-1{
+    background-image: url('../assets/sammy-line-girl-opening-browser-window-on-laptop.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 300px;
+    width: 500px;
+    padding: 120px;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .portofolio-container {
+        flex-direction: column;
+    }
+    .portofolio-1, .portofolio-list {
+        width: 40%;
+        margin: 10px 0;
+    }
+}
+
+.portofolio-container a{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.portofolio-list{
+    color: white;
+    font-weight: bold;
+    background-color: #00686c;
+    padding: 70px;
+    border-color: white;
+    border-radius: 5%;
+}
+
+.portofolio-list h2{
+    text-align: center;
+}
+
+/* Message Us Section */
+.message-us{
+    margin-top: 5%;
+    background-color: white;
+    border: solid grey;
+    border-radius: 1%;
+    padding: 5%;
+}
+
+.message-us-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.form-table{
+    width:  100%;
+    max-width: 500px;
+}
+
+.form-table td{
+    padding: 10px;
+    vertical-align: top;
+}
+
+.form-table label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-table input, .form-table textarea {
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.form-output{
+    background-color: #00676c;
+    color: white;
+    width: 350px;
+    height: 310px;
+    align-items: center;
+    padding: 5%;
+}
+
+.form-output label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+
+.submit-button{
+    background-color: #00676c;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    color: white;
+    font-weight: bold;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+.divider-2{
+    height: 1px;
+    background-color: #00686c;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .message-us-container {
+        flex-direction: column;
+    }
+    .message-form, .form-output {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+/* Footer Section */
+.footer{
+    margin-top: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    padding: 20px;
+    background-color: #f6f6fd;
+}
+
+.footer-logo{
+    height: 100px;
+    width: 130px;
+    background-image: url('../assets/logo.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+footer a{
+    color: black;
+    font-weight: 500;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social, .footer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-logo, .footer-top, .footer-bottom {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
